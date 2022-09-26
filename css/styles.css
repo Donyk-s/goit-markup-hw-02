@@ -1,10 +1,33 @@
 /* Палитра */
-
-
-*/----Logo-----/*
-.logo{
-  color: #2196F3;
+:root{
+  --hover-color: #2196F3;
+;
 }
+
+
+/* Логотип*/
+.logo{
+  color: var(--hover-color);
+}
+
 .logo-link{
     color:#000000;
 }
+.icon-logo:hover, :focus {
+  color:var(--hover-color);
+}
+
+.nav-list{
+  list-style: none;
+
+}
+.nav-list:hover, :focus{
+  color: var(--hover-color);}
+  .link{
+    text-decoration: none;
+  }
+
+.contacts-list-mail{
+  list-style: none;
+}
+
