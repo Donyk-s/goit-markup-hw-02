@@ -1,42 +1,119 @@
 /* Палитра */
 :root{
   --hover-color: #2196F3;
-;
+  --h-color: #212121;
+  --background-header: #FFFFFF;
+  --hero-background: #2F303A;
+  --p-color: #757575;
+}
+body {
+  font-family:Roboto, sans-serif;
+color: var(--h-color);
+font-size: 14px;
 }
 
 
+.page-header{
+  background-color: var(--background-header);
+}
 /* Логотип*/
-.logo:hover, :focus{
-  color: var(--hover-color);
+.logo :hover{
+  color :var(--hover-color);   
 }
 
 .logo-part{
     color:#000000;
 }
+/* ------------ Два кольори лого--------*/
 .icon-logo{
   color:var(--hover-color);
+  
   text-decoration: none;
 font-family: Raleway, sans-serif; 
-font-style: normal;
+
 font-weight: 700;
 font-size: 26px;
-line-height: 31px;
-
-
+line-height: 1.2;
 letter-spacing: 0.03em;
 }
-/* Головна навігація */
+/*------ The End-----*/
+/* -----------Головна навігація------ */
+
 .nav-list{
   list-style: none;
-
+font-weight: 500;
+font-size: 14px;
+line-height: 1,14;
+letter-spacing: 0.02em;
 }
-.nav-list:hover, :focus{
-  color: var(--hover-color);}
-  .link{
-    text-decoration: none;
-  }
+/*------Ось це Прибирає!!! підкреслення в посиланні головного меню---*/
+.nav-link{
+  color: var(--h-color);
+  text-decoration: none;
+}
+
+.nav-list :hover{
+  color: var(--hover-color);
+} 
+.nav-list :focus{
+  color: var(--hover-color);
+}
+
+/*-----The End-----*/
+/*------Текст контактів в хедері------*/
 
 .contacts{
   list-style: none;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1,14;
+letter-spacing: 0.02em;
+}
+.mail{
+  color: var(--p-color);
+  text-decoration: none;
+  
+} 
+.tel{
+ color: var(--p-color);
+  text-decoration: none; 
+}
+.contacts :hover{
+  color: var(--hover-color);
+}
+.contacts :focus{
+  color: var(--hover-color);
 }
 
+/*---------Hero-----*/
+
+.hero-section{
+  background-color: var(--hero-background)
+}
+.hero-title{
+font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 1,36;
+
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--background-header);
+}
+.button{
+  font-family: inherit;
+font-weight: 700;
+font-size: 16px;
+line-height: 1,87;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+ background-color: var(--hover-color);
+ color: var(--background-header);
+  cursor: pointer;
+}
+/*-----The End Hero----*/

@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студія</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https: //fonts.googleapis.com/css2?family= Raleway:wght@700 & family = Roboto:wght@400;500;700;900 & display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!--шапка сайту-->
     <header class="page-header"> 
-        <nav class="navigation">
+        <nav class="nav">
         <a href="index.html" class="icon-logo"><span class="logo">Web</span><span class="logo-part">Studio</span></a>
         <ul class="nav-list">
             <li class="nav-item"><a class="nav-link" href="index.html">Студія</a></li>
@@ -28,12 +30,12 @@
     </header>
     <main><!-- маін-->
     <!--думаю тут буде якийсь банер чи малюнок-->
-        <section class="section"> 
-            <h1>Ефективні рішення для вашого бізнесу</h1>
-            <button type="button">Замовити послугу</button>
+        <section class="hero-section"> 
+            <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+            <button class="button" type="button">Замовити послугу</button>
         </section>
     <section><!--Особливості тут явно має бути заголовок-->
-        <h2 hidden>Особливості</h2> <!--тут явно має бути заголовок-->
+        <h2 hidden class="">Особливості</h2> <!--тут явно має бути заголовок-->
         <ul>
             <li><h3>Увага до деталей</h3>
                 <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
@@ -53,15 +55,15 @@
         <ul>
             <li>
                 <img src="./images/oldpc.jpg" 
-                alt="білий монітор та клавіатура на столі" width="370"/>
+                alt="білий монітор та клавіатура на столі" width="370">
             </li>
             <li>
                  <img src="./images/book.jpg"
-                  alt="людина тримає смртфон в руці та працює за ноутбуком" width="370"/> 
+                  alt="людина тримає смртфон в руці та працює за ноутбуком" width="370"> 
             </li>
             <li>
                 <img src="./images/tablet.jpg"
-                 alt="рука тримає включений планшет" width="370"/>
+                 alt="рука тримає включений планшет" width="370">
             </li>
         </ul>
 
@@ -115,3 +117,11 @@
 </html>
 
 
+.logo{
+  color: var(--hover-color);
+}
+}
+
+.logo-part{
+    color:#000000;
+}
