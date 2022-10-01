@@ -7,6 +7,7 @@
   --p-color: #757575;
   --features: #F5F5F5;
   --team-background: #F5F4FA;
+  --button-servise: #188ce8;
 }
 body {
   font-family:Roboto, sans-serif;
@@ -50,17 +51,14 @@ font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.02em;
 }
+nav-list :hover,
+.nav-list :focus{
+  color: var(--hover-color);
+} 
 /*------Ось це Прибирає!!! підкреслення в посиланні головного меню---*/
 .nav-link{
   color: var(--h-color);
   text-decoration: none;
-}
-
-.nav-list :hover{
-  color: var(--hover-color);
-} 
-.nav-list :focus{
-  color: var(--hover-color);
 }
 
 /*-----The End-----*/
@@ -84,9 +82,7 @@ letter-spacing: 0.02em;
   text-decoration: none;
   font-style: normal;
 }
-.contacts :hover{
-  color: var(--hover-color);
-}
+.contacts :hover,
 .contacts :focus{
   color: var(--hover-color);
 }
@@ -119,12 +115,35 @@ letter-spacing: 0.06em;
  color: var(--background-header);
   cursor: pointer;
 }
+.button:hover,
+.button:focus{
+  color: #188ce8;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+}
 /*-----The End Hero----*/
 .features {
   background-color: var(--features) ;
+ 
+}
+.visually-hidden {
+  position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
-.specialty {font-style: normal;
+.features-list{
+  list-style: none; 
+}
+
+.specialty{font-style: normal;
 font-weight: 700;
 line-height: 1.14;
 letter-spacing: 0.03em;
@@ -146,7 +165,7 @@ color: var(--p-color)
 .team-title {
   font-weight: 700;
 font-size: 36px;
-line-height: 42px;
+line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
 
@@ -186,12 +205,11 @@ color: var(--p-color);
     list-style: none;
     font-weight: 400;
 }
-.contacts-list :hover{
+.contacts-list :hover,
+.contacts-list :focus{
   color: var(--hover-color);
 }
-.contacts-list :focus{
-color: var(--hover-color);
-}
+
 
 .contacts-plane{
  text-decoration: none;
