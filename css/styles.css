@@ -5,7 +5,6 @@
   --background-header: #FFFFFF;
   --hero-background: #2F303A;
   --p-color: #757575;
-  --features: #F5F5F5;
   --team-background: #F5F4FA;
   --button-servise: #188ce8;
   --mail-tel: rgba(255, 255, 255, 0.6);
@@ -86,7 +85,14 @@ line-height: 1.71;
   }
 .contacts :hover,
 .contacts :focus{
+  color: var(--hover-color);
+}
+
+.mail-footer,
+.tel-footer{
   color: var(--mail-tel);
+  text-decoration: none;
+  font-style: normal;
 }
 
 /*---------Hero-----*/
@@ -120,9 +126,7 @@ letter-spacing: 0.06em;
 
 }
 /*-----The End Hero----*/
-.features {
-  background-color: var(--features) ;
-}
+
 .visually-hidden {
   position: absolute;
     white-space: nowrap;
@@ -223,7 +227,7 @@ color: var(--background-header);
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
-background-color: var(--background-header);
+background-color: var(--team-background);
  border-color: transparent;
  cursor: pointer;
 color: var(--h-color);
